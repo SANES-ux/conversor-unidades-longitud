@@ -13,6 +13,7 @@ Aplicación de escritorio interactiva desarrollada en Python con **CustomTkinter
 - **Validaciones en tiempo real**: Alertas intuitivas en caso de campos vacíos o entradas no numéricas.
 - **Acciones rápidas**:
   - Botón **Convertir** y ejecución rápida con la tecla `Enter`.
+  - Botón **⇅ Intercambiar unidades** para alternar origen y destino al instante sin perder el valor.
   - Botón **Limpiar** para reiniciar la interfaz a su estado por defecto.
 
 ## 📦 Requisitos e Instalación
@@ -33,11 +34,22 @@ python app.py
 ```
 *(En Windows también puedes usar `py app.py`)*
 
+## 🧪 Pruebas Unitarias
+
+Para ejecutar la suite de pruebas unitarias:
+
+```bash
+python -m unittest discover tests
+```
+
 ## 📂 Estructura del Proyecto
 
 ```text
 ├── app.py              # Código fuente principal de la aplicación GUI
+├── SPEC.md             # Especificación técnica y requerimientos
 ├── requirements.txt    # Dependencias del proyecto
 ├── .gitignore          # Exclusiones de Git
-└── README.md           # Documentación del proyecto
+├── README.md           # Documentación del proyecto
+└── tests/              # Suite de pruebas automatizadas
+    └── test_mejora.py  # Tests unitarios de conversión e intercambio
 ```
